@@ -1,11 +1,7 @@
-name: Post welcome comment
+name: Dummy Test
 
 on:
-  pull_request:
-    types: [opened]
-
-permissions:
-  pull-requests: write
+  workflow_dispatch:
 
 jobs:
   test:
@@ -13,4 +9,4 @@ jobs:
 
     steps:
       - name: Say Hello
-        run: echo "Hello! A pull request was opened."
+        run: echo "Hello! GitHub Actions is working!"
